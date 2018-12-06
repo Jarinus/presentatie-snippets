@@ -1,5 +1,5 @@
 # Schaalbaarheid met Akka en Scala
-Deze code is onderdeel van mijn presentatie over Akka en Scala, die
+Deze code is onderdeel van mijn presentatie over schaalbaarheid met Akka en Scala, die
 [hier](https://docs.google.com/presentation/d/1SPwEJwpg4ViD_nBHZ5y-gF_FlGzZFiq_aSjuPbsb1hg/edit?usp=sharing) te vinden
 is.
 
