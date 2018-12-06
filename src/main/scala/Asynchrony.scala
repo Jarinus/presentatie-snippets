@@ -1,4 +1,4 @@
-import java.util.concurrent.{Executors, TimeUnit}
+import java.util.concurrent.Executors
 
 import Asynchrony._
 import AsynchronyHelper._
@@ -45,7 +45,7 @@ object AsynchronousSawmill extends Sawmill {
   override def saw(logs: List[Log]): List[Plank] = {
     val future = Future.sequence(logs.map(sawAsync))
 
-    Await.result(future, Duration(logs.size, TimeUnit.SECONDS))
+    Await.result(future, Duration.Inf)
   }
 
   private def sawAsync(log: Log): Future[Plank] =
